@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles1.css">
+    <link rel="stylesheet "
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <title>Menu</title>
+    <script>
+        $(function () {
+            $("#nav-bar").load("nav-bar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body class=" font-Heebo " style="background-image: url(images/rhu.png);">
+
+        <!-- Load navigation bar and chat button -->
+        <div id="nav-bar"></div>
+
+        <div>
+
+            <div class="flex flex-row">
+                <div><a href="/public/index.html"><img class="ml-4 mt-7" src="images/back.png" alt=""></div>
+                </a>
+                <div class="flex border-white mt-7 mr-3"
+                    style="position: absolute; background-color: #F4E9FF; right: 0; border-radius: 1.625rem; border: 2px;">
+                    <input class=" flex w-full rounded-full mr-4 text-base"
+                        style="background-color: #F4E9FF; color: #707070; padding: 6px; " type="text"
+                        placeholder="Search...">
+                    <button type="submit"><img
+                            style="float: right; padding: 6px 10px; margin-top: 2px; margin-right: 10px; border: none; cursor: pointer; "
+                            src="images/21  Magnify, Search, Zoom.png" alt=""></button>
+                </div>
+            </div>
+            <br>
+            <div>
+                <ul class="flex flex-col space-y-3 ml-4 font-medium text-xl text-new_color1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <br>
+                    <li><a href="#">Sign In/Sign Up</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <br>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Chat Bot</a></li>
+                </ul>
+            </div>
+        </div>
+        <br><br><br><br><b><br><br>
+
+
+    <!--Chatbot button-->
+    <div class="z-10 fixed bottom-0 right-0">
+        <img src="images/chat.png" alt="">
+    </div>
+</body>
+
+</html>

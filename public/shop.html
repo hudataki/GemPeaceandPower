@@ -1,0 +1,278 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="style/styles1.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+   <script>
+      $(function () {
+         $("#footer").load("footer.html");
+         $("#nav-bar").load("nav-bar.html");
+      });
+   </script>
+   <link rel="stylesheet" href="style/styles1.css">
+   <title>Shop | Gem Peace & Power</title>
+</head>
+
+<body>
+   <div class=" h-20 bg-shop ">
+
+      <nav class=" flex-row">
+          <div class=" relative grid place-items-center">
+
+              <div class="flex-none absolute inset-y-0 left-0 pt-3">
+                  <a href="menu.html"><img class="object-none h-12 w-12" src=" images/bars.png" alt=""></a>
+              </div>
+
+              <div class=" flex-row grid place-items-center self-center pt-2">
+
+                  <a href="index.html"><img class="object-none " src=" images/logo.png" alt=""></a>
+              </div>
+
+              <div class="flex-none absolute inset-y-0 right-14 pt-3 pl-8">
+                  <a href="cart.html"><img class="object-none h-12 w-12" src=" images/cart.png" alt=""></a>
+              </div>
+
+              <div class="flex-none absolute inset-y-0 right-0 pl-2 pr-2 pt-3">
+                  <a href="wishlist.html"><img class="object-none h-12 w-12" src=" images/heart.png" alt=""></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+
+</div>
+   <div class="bg-shop rounded-md pb-3">
+      <div class="absolute left-2">
+         <img class="relative top-4 " src="images/back.png" alt="">
+     </div>
+     <div class=" w-full grid place-items-center text-center">
+         <span class="text-new_color1 text-4xl mt-4 font-Ogg">Shop</spn>
+     </div>
+</div> 
+      <div class="grid place-items-center relative">
+          <a href=""><img class="content-center" src="images/Mask Group 9.png" alt=""></a>
+          <p class="absolute text-new_color1 font-Ogg text-center text-3xl pb-20">Welcome To The Peace <br> 
+              And Power Shop</p>
+          <p class="absolute text-new_color1 font-Heebo text-center bottom-0 pb-20">We are a small business based <br>
+              in Lebanon that sells handcrafted <br>
+              spiritual gemstones and jewelry</p>
+          
+      </div>
+      
+      <div class="text-new_color text-center grid place-items-center pt-2">
+<img src=" images/Group 197.png" alt="">
+      </div>
+      <div class=" w-full grid place-items-center text-center">
+         <span class="text-new_color1 text-3xl mt-4 font-Ogg">Filters</spn>
+     </div>
+      <div class="text-new_color1 p-5 text-4xl text-center grid place-items-center">
+         <section id="filters" class="flex flex-col gap-y-4 relative z-10">
+
+            <div id="color" class="flex items-center gap-x-3 gap-y-2">
+               <p class="font-Heebo text-filters text-base">Color</p>
+   
+               <div class="flex gap-x-6">
+                  <div class="cursor-pointer w-5 h-5 rounded-full border-2 border-gray-800 bg-gray-800 transition">
+                  </div>
+                  <div class="cursor-pointer w-5 h-5 rounded-full border-2 border-blue-500 hover:bg-blue-300 transition">
+                  </div>
+                  <div
+                     class="cursor-pointer w-5 h-5 rounded-full border-2 border-yellow-300 hover:bg-yellow-200 transition">
+                  </div>
+                  <div
+                     class="cursor-pointer w-5 h-5 rounded-full border-2 border-yellow-600 hover:bg-yellow-500 transition">
+                  </div>
+                  <div
+                     class="cursor-pointer w-5 h-5 rounded-full border-2 border-purple-400 hover:bg-purple-300 transition">
+                  </div>
+                  <div class="cursor-pointer w-5 h-5 rounded-full border-2 border-red-600 hover:bg-red-400 transition">
+                  </div>
+                  <div class="cursor-pointer w-5 h-5 rounded-full border-2 border-green-500 hover:bg-green-400 transition">
+                  </div>
+               </div>
+   
+            </div>
+   
+            <div id="cut" class="flex items-center gap-x-3 gap-y-2">
+               <p class="font-Heebo text-filters text-base">Cut</p>
+               <div class="flex gap-x-6">
+   
+                  <div data-cut="triangle" class="ml-2 -mr-1.5 transform scale-90 -translate-y-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27">
+                        <path id="Polygon_1" data-name="Polygon 1"
+                           d="M12.9,4.532a3,3,0,0,1,5.2,0L28.42,22.506A3,3,0,0,1,25.819,27H5.181a3,3,0,0,1-2.6-4.494Z"
+                           fill="#acaffc" />
+                     </svg>
+                  </div>
+   
+                  <div data-cut="rectangle"
+                     class="cursor-pointer w-5 h-5 rounded-md border-2 border-purple-400 hover:bg-purple-300 transition">
+                  </div>
+                  <div data-cut="diamond"
+                     class="cursor-pointer w-5 h-5 rounded-md border-2 border-purple-400 hover:bg-purple-300 transition transform scale-90 rotate-45">
+                  </div>
+                  <div data-cut="ellipse"
+                     class="-ml-1 cursor-pointer w-7 h-5 rounded-oval border-2 border-purple-400 hover:bg-purple-300 transition">
+                  </div>
+                  <div data-cut="circle"
+                     class="-ml-0.5 cursor-pointer w-5 h-5 rounded-full border-2 border-purple-400 hover:bg-purple-300 transition">
+                  </div>
+               </div>
+   
+            </div>
+   
+            <div id="size" class="flex items-center gap-x-3 gap-y-2 ">
+               <p class="font-Heebo text-filters text-base">Size</p>
+   
+               <button type="button"
+                  class="ml-0.5 px-6 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">Small</button>
+               <button type="button"
+                  class="px-6 py-1.5 text-sm rounded-full bg-gradient-to-tr from-new1 to-new2 transition">Medium</button>
+               <button type="button"
+                  class="px-6 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">Large</button>
+            </div>
+   
+            <div id="type">
+               <div class="flex items-center gap-x-3 gap-y-2 flex-wrap">
+                  <p class="font-Heebo text-filters text-base">Type</p>
+   
+                  <button type="button"
+                     class="-ml-1 px-7 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">Raw</button>
+                  <button type="button"
+                     class="px-10 py-1.5 text-sm rounded-full bg-gradient-to-tr from-new1 to-new2">Cut</button>
+                  <button type="button"
+                     class="pr-3 pl-3.5 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">Tumbled</button>
+               </div>
+               <div class="flex items-center flex-wrap gap-x-3 gap-y-2 mt-2">
+                  <button type="button"
+                     class="ml-10 px-2 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">High
+                     Grade</button>
+                  <button type="button" class="-ml-0.5 pr-4 pl-5 py-1.5 text-sm rounded-full bg-gradient-to-tr from-new1 to-new2">Low
+                     Grade</button>
+               </div>
+            </div>
+   
+            <div id="price" class="flex items-center gap-x-2 gap-y-2 flex-wrap">
+               <p class="font-Heebo text-filters text-base">Price</p>
+   
+               <input type="text" name="min" id="min"
+                  class="border-none outline-none rounded-full bg-purple-200 w-20 h-7 py-1 px-3 text-base" placeholder="Min...">
+               <input type="text" name="max" id="max"
+                  class="border-none outline-none rounded-full bg-purple-200 w-20 h-7 py-1 px-3 text-base" placeholder="Max...">
+               <button type="button"
+                  class="px-4 py-1 text-sm rounded-full border-2 bg-gradient-to-tr from-new1 to-new2">L.L.</button>
+               <button type="button"
+                  class="px-4 py-1 text-sm rounded-full border-2 border-purple-400 hover:bg-purple-400 transition">$$</button>
+   
+            </div>
+         </section>
+
+      </div>
+
+
+      
+
+        
+         <!-- new -->
+         <div class="flex flex-col  m-auto p-auto">
+            <div class="relative">
+               <h2 class="text-center text-4xl mt-8 mb-5 relative z-10">Based on Your Needs</h2>
+               <img src="./images/squiggle.png" class="overflow-hidden absolute -top-24 z-0">
+            </div>
+            <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+                <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 ">
+                    <div class="inline-block px-3">
+                        <div
+                            class="w-64 h-100 overflow-hidden rounded-lg  hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                            <div><img class="w-64 h-100" src="images/Group 194-1.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="inline-block px-3">
+                        <div
+                            class="w-64 h-100 overflow-hidden rounded-lg  hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                            <div><img class="w-64 h-100" src="images/Group 194.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- over -->
+
+      <section id="explore" class="mb-8">
+
+         <div class="relative">
+            <h2 class="text-center text-4xl mt-14 mb-5 font-Ogg relative z-10">Or Explore On <br>Your Own...</h2>
+            <img src="./images/squiggle-2.png" class="overflow-hidden absolute -top-16 transform">
+         </div>
+
+         <div class="grid grid-cols-2 gap-x-1 gap-y-8 relative">
+            <div class="Category flex flex-col items-center justify-center relative z-10">
+               <h3 class="font-Ogg text-center text-2xl overflow-clip mb-3 h-full">Tumbled Stones</h3>
+               <div class="h-full">
+                  <img src="./images/tumbled-new.png">
+               </div>
+            </div>
+
+            <div class="Category flex flex-col items-center justify-center relative z-10">
+               <h3 class="font-Ogg text-center text-2xl overflow-clip mb-3 h-full">Braceletes</h3>
+               <div class="h-full">
+                  <img src="./images/braceletes-new.png">
+               </div>
+            </div>
+
+            <div class="Category flex flex-col items-center justify-center relative z-10">
+               <h3 class="font-Ogg text-center text-2xl overflow-clip mb-3 h-full">Necklaces</h3>
+               <div class="h-full">
+                  <img src="./images/necklaces-new.png">
+               </div>
+            </div>
+            <div class="Category flex flex-col items-center justify-center relative z-10">
+               <h3 class="font-Ogg text-center text-2xl overflow-clip mb-3 h-full">Prayer Beads</h3>
+               <div class="h-full">
+                  <img src="./images/prayerbeads-new.png">
+               </div>
+            </div>
+            <div class="Category flex flex-col items-center justify-center relative z-10">
+               <h3 class="font-Ogg text-center text-2xl overflow-clip mb-3 h-full">Rings</h3>
+               <div class="h-full">
+                  <img src="./images/rings-new.png">
+               </div>
+            </div>
+         
+            <div class="Category flex flex-col items-center justify-center text-center relative z-10 mt-11">
+               <img src="./images/rings.png">
+               <p class="absolute text-3xl mb-10 font-Heebo ">Looking For More?</p>
+                  
+               
+               <button type="button"
+                  class="absolute font-Heebo text-white text-lg bottom-16 rounded-full px-5 py-5 bg-button2 transition">Go
+                  To Our<br>
+                  Benefits Page
+               </button>
+            </div>
+            <img src="./images/squiggle-3.png"
+               class=" overflow-hidden absolute bottom-0 z-0 transform ">
+         </div>
+      </section>
+
+     <!-- Chat Bot -->
+<div class=" fixed bottom-0 right-0 z-10">
+   <img src="images/chat.png" alt="">
+</div>
+
+   <footer id="footer">
+      <!-- inserted through jquery -->
+   </footer>
+   </div>
+
+</body>
+
+</html>

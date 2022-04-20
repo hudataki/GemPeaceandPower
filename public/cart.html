@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <title>Cart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style/styles1.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#nav-bar").load("nav-bar.html");
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Load navigation bar and chat button -->
+    <div id="nav-bar"></div>
+
+    <!-- CART Text -->
+    <div class=" grid place-items-center text-center">
+        <p class="text-new_color1 text-4xl mt-5 font-Ogg font-bold">Cart</p>
+    </div>
+    <!-- BACK BUTTON -->
+    <div class="absolute top-20 left-2">
+        <a href="index.html"><img class="relative top-4 " src="images/back.png" alt=""></a>
+    </div>
+
+    <!-- Chat page button -->
+    <div class="fixed bottom-0 right-0 z-20">
+        <img src="images/chat.png" alt="">
+    </div>
+
+    <div class="flex justify-center items-center mt-9 mb-10">
+        <div class="h-40 w-11/12 text-center justify-center items-center bg-cart_bg rounded-lg ">
+            <table class="text-new_color1 w-full text-xl mt-3">
+
+
+                <tr class="">
+                    <td class="pl-3">
+                        <p>Subtotal</p>
+                    </td>
+
+                    <td class="text-right pr-8">
+                        <p class="">$26.00</p>
+                    </td>
+                </tr>
+
+                <tr class="">
+                    <td class="pl-3">
+                        <p class="">Tax</p>
+                    </td>
+
+                    <td class="text-right pr-8">
+                        <p class="">$4.00</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pl-3 pb-3">
+                        <p class="">Delivery</p>
+                    </td>
+
+                    <td class="text-right pr-8">
+                        <p class="">$2.00</p>
+                    </td>
+                </tr>
+
+
+                <tr class="">
+                    <td colspan=" 3" class="text-white ">
+                        <hr class="" style="height:1px;border:none;color:white;background-color:white;">
+                    </td>
+
+                </tr>
+
+                <tr class=" font-bold ">
+                    <td class="pl-3 pt-2 ">
+                        <p class="">Total</p>
+                    </td>
+                    <td class="text-right pr-8">
+                        <p class="">$32.00</p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <div class="  grid place-items-center ">
+
+
+        <!-- Item 1 -->
+
+        <div class="w-11/12 h-30 bg-gradient-to-r from-new1 to-new2 rounded-full mb-6">
+
+
+            <table class="text-button2  w-full">
+                <tr class="h-full w-full ">
+
+                    <td class="pb-1 pl-7 "><img src="images/opal-ring.png" alt="" class=" h-22 w-25 "></td>
+
+                    <td class="pl-5 w-2/4 ">
+                        <table class="text-button2 ">
+                            <tr>
+                                <td class="py-2.5 font-bold text-xl ">Opal Ring</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="minus" class=" bg-white rounded-full h-6 w-6">-</button>
+                                    <input type=" text" class="rounded-full w-16 text-center " placeholder="1">
+                                    <button id="plus" class=" bg-white rounded-full h-6 w-6">+</button>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td class="py-2.5  text-lg ">Price: 14.00$</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td class=" w-2/12 relative right-0 top-0"><img src="images/close.png" alt=""
+                            class="absolute right-2 bottom-11">
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </div>
+        <!-- End of Item 1 -->
+
+        <!-- Item 2 -->
+        <div class="w-11/12 h-30 bg-gradient-to-r from-new1 to-new2 rounded-full ">
+
+
+            <table class="text-button2  w-full">
+                <tr class="h-full w-full ">
+
+                    <td class="pb-1 pl-7 "><img src="images/jade.png" alt="" class=" h-22 w-25 "></td>
+
+                    <td class="pl-5 w-2/4 ">
+                        <table class="text-button2 ">
+                            <tr>
+                                <td class="py-2.5 font-bold text-xl ">Raw Jade
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w-full">
+                                    <button id="minus" class=" bg-white rounded-full h-6 w-6">-</button>
+                                    <input type=" text" class="rounded-full w-16 text-center " placeholder="1">
+                                    <button id="plus" class=" bg-white rounded-full h-6 w-6">+</button>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td class="py-2.5  text-lg ">Price: 12.00$</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td class=" w-2/12 relative right-0 top-0"><img src="images/close.png" alt=""
+                            class="absolute right-2 bottom-11">
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </div>
+
+        <!-- End of element 2  -->
+
+
+    </div>
+
+    <div class=" grid place-items-center mt-10">
+        <a class="w-full text-center" href="checkout.html"><button
+                class="rounded-full bg-button2 w-1/2 h-12 text-xl text-white font-Ogg">Checkout</button></a>
+    </div>
+
+    <br>
+
+
+</body>
+
+<!-- Load footer -->
+<footer>
+    <div id="footer"></div>
+</footer>
+
+
+</html>

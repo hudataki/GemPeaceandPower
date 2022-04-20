@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="style/styles1.css">
+  <title>Checkout</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+      $("#nav-bar").load("nav-bar.html");
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Load navigation bar and chat button -->
+  <div id="nav-bar"></div>
+  <!-- BACK BUTTON -->
+  <div class="absolute left-2">
+    <a href="index.html"><img class="relative top-4 " src="images/back.png" alt=""></a>
+  </div>
+  <div class=" w-full grid place-items-center text-center">
+    <span class="text-new_color1 text-4xl mt-4 font-Ogg">Checkout</spn>
+  </div>
+  <!-- Chat page button -->
+  <div class="fixed bottom-0 right-0 z-20">
+    <img src="images/chat.png" alt="">
+  </div>
+
+  <div class="flex flex-row justify-center ">
+    <div
+      class=" mt-4 rounded-full pt-1 border-2 w-8 h-8 text-center text-white bg-gradient-to-tr from-new1 to-new2 font-Soria">
+      1</div>
+    <span class=" relative text-4xl text-gray-400 mt-2 ">- - - -</span>
+    <div class=" mt-4 rounded-full pt-1 border-2 w-8 h-8 text-center  text-black font-Soria">2</div>
+    <h1 class=" relative text-4xl text-gray-400 mt-2">- - - -</h1>
+    <div class=" mt-4 rounded-full pt-1  border-2 w-8 h-8 text-center text-black font-Soria">3</div>
+  </div>
+
+  <!-- iphoneX -->
+  <div class="flex flex-row justify-center">
+    <span class="pt-2 mr-4 font-Heebo">Shipping</span>
+    <span class="pt-2 ml-10 font-Heebo">Payment</span>
+    <span class="pt-2 ml-14 font-Heebo">Summary</span>
+  </div>
+
+  <!-- SamsungS7edge backup
+  <div class="flex flex-row justify-center">
+      <span class="pt-2 mr-4 font-Heebo">Shipping</span>
+      <span class="pt-2 pl-2 ml-4 font-Heebo">Payment</span>
+      <span class="pt-2 ml-10 font-Heebo">Summary</span>
+  </div> -->
+
+  <div id="Personal-Information" class="mb-10 mt-5">
+    <h1 class=" ml-4 text-new_color1 text-4xl font-Ogg">Personal Information</h1>
+    <span id="undertitle" class="ml-4 mb-2 text-4xl text-gray-300">- - - - - - - - - - - - -</span>
+
+    <div class="mb-5">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="fullname">
+        Full Name
+      </label>
+      <input class="ml-4 border rounded w-80 py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="fullname" type="text">
+    </div>
+
+    <div class="mb-4">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="email">
+        Email Address
+      </label>
+      <input class="ml-4 border rounded w-80 py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="email" type="email">
+    </div>
+
+    <div class="mb-4 ml-4 ">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="phonenumber">
+        Phone Number
+      </label>
+      <input class="border rounded w-80 py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="phone" type="number">
+    </div>
+  </div>
+
+
+
+  <div id="Delivery-Information" class="mb-10 mt-5">
+    <h1 class=" ml-4 text-new_color1 text-4xl font-Ogg">Delivery Information</h1>
+    <span id="undertitle" class="ml-4 mb-2 text-4xl text-gray-300">- - - - - - - - - - - - -</span>
+    <br>
+    <div class="mb-5">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="address">
+        Delivery Address
+      </label>
+      <input class="ml-4 border rounded w-80 py-2 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="address" type="text">
+    </div>
+
+    <div class="mb-4">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="suit">
+        Apartment, suite, etc.
+      </label>
+      <input class="ml-4 border rounded w-80 py-2 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="suit" type="email">
+    </div>
+
+    <div class="flex flex-row ">
+      <div class="mb-5 flex-initial">
+        <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="address">
+          City
+        </label>
+        <input
+          class="flex-auto ml-4 border w-36 rounded py-2 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+          id="address" type="text">
+      </div>
+      <div class="mb-5 flex-initial">
+        <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="address">
+          Country
+        </label>
+        <input
+          class="flex-auto ml-4 border w-40 rounded py-2 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+          id="address" type="text">
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block ml-4 text-2xl font-bold font-Heebo mb-2" for="suit">
+        Apartment, suite, etc.
+      </label>
+      <input class="ml-4 border rounded w-80 py-2 text-gray-700 focus:outline-none focus:shadow-outline bg-form"
+        id="suit" type="email">
+    </div>
+
+    <div>
+      <label class="inline-flex items-center ml-4">
+        <input type="checkbox" class="form-checkbox" checked>
+        <span class="ml-2">Save Address</span>
+      </label>
+    </div>
+  </div>
+
+
+  <div id="Payment-Method" class="mb-10 mt-5">
+    <h1 class=" ml-4 text-new_color1 text-4xl font-Ogg">Payment Method</h1>
+    <span id="undertitle" class="ml-4 mb-2 text-4xl text-gray-300">- - - - - - - - - - - - -</span>
+    <div class="grid grid-cols-3">
+
+      <div class="">
+        <button
+          class="ml-4 bg-gradient-to-tr from-new1 to-new2  text-white font-Heebo text-sm px-4 w-35 h-20 rounded-3xl">
+          <img src="images/credit-card-w.png" class="w-8 h-6 ml-4 mb-2" alt="">
+          <span class="">Credit Card</span>
+        </button>
+      </div>
+
+      <div class="">
+        <button class="ml-4 bg-form  text-black font-Heebo text-sm  px-8 w-35 h-20 rounded-3xl">
+          <img src="images/credit-card-b.png" class="w-9 h-9 ml-1 mb-2" alt="">
+          <span>Paypal</span>
+        </button>
+      </div>
+
+      <div class="">
+        <button class="ml-4 bg-form  text-black font-Heebo text-sm px-6 w-35 h-20 rounded-3xl pt-3">
+          <div class="border-2 border-solid border-black w-8 h-6 ml-2"><img class="w-4 h-4 ml-1.5 mt-0.5"
+              src="images/dollar-currency-symbol.png" alt="">
+          </div>
+          <span>Cash on <br> Delivery</span>
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <button class="bg-button2 text-white font-bold py-2 px-4 mt-8 rounded-full">
+        Next
+      </button>
+    </div>
+
+
+
+  </div>
+
+</body>
+<script>
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script>
+<!-- Load footer -->
+<footer>
+  <div id="footer"></div>
+</footer>
+
+</html>
